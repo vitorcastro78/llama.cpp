@@ -913,7 +913,7 @@ static __device__ __forceinline__ float vec_dot_ptq1_0_q8_1(const void * __restr
                                                             const block_q8_1 * __restrict__ bq8_1,
                                                             const int & kbx,
                                                             const int & iqs) {
-#if defined(GGML_USE_HIP)
+#if defined(GGML_USE_HIP) || defined(GGML_USE_MUSA)
     const block_ptq1_0 * bq      = (const block_ptq1_0 *) vbq + kbx;
     int                  sumi[4] = { 0, 0, 0, 0 };
 
@@ -963,8 +963,7 @@ static __device__ __forceinline__ float vec_dot_ptq1_0_q8_1(const void * __restr
     }
     return (float) bq->d * acc;
 #else
-    // Unreachable on CUDA: mul_mat_vec_q routes every PTQ1_0 ncols_dst through
-    // vec_dot_ptq1_0_q8_1_multi, which needs the column base for the warp-transposed q8 layout.
+    // NVIDIA PTQ1_0 goes through vec_dot_ptq1_0_q8_1_multi. HIP and MUSA use the scalar loop above.
     GGML_UNUSED(vbq);
     GGML_UNUSED(bq8_1);
     GGML_UNUSED(kbx);
