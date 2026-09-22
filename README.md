@@ -4,7 +4,7 @@
 > **Fork `vitorcastro78/llama.cpp` (branch `kortex`)**
 >
 > 1. **GitHub parent:** [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) (oficial)
-> 2. **Código:** tip [PrismML `prism`](https://github.com/PrismML-Eng/llama.cpp/tree/prism) (Bonsai 2 / `PQ2_0` / `PTQ1_0`) — squash sobre `master` (merge ingénuo parte APIs)
+> 2. **Código:** tip [PrismML `prism`](https://github.com/PrismML-Eng/llama.cpp/tree/prism) (Bonsai 2 / `PQ2_0` / `PTQ1_0`)
 > 3. **Roadmap:** [thecodacus `perf`](https://github.com/thecodacus/llama.cpp) via cherry-pick
 >
 > Remotes: `origin`, `upstream` (ggml-org), `prism`, `thecodacus`.
