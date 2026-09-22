@@ -1,5 +1,14 @@
 # llama.cpp
 
+> [!NOTE]
+> **Fork `vitorcastro78/llama.cpp` (branch `kortex`)**
+>
+> 1. **GitHub parent:** [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) (oficial)
+> 2. **Código:** tip [PrismML `prism`](https://github.com/PrismML-Eng/llama.cpp/tree/prism) (Bonsai 2 / `PQ2_0` / `PTQ1_0`) — squash sobre `master` (merge ingénuo parte APIs)
+> 3. **Roadmap:** [thecodacus `perf`](https://github.com/thecodacus/llama.cpp) via cherry-pick
+>
+> Remotes: `origin`, `upstream` (ggml-org), `prism`, `thecodacus`.
+
 > [!IMPORTANT]
 > **This is the PrismML fork of llama.cpp**, the main line behind the [Bonsai](https://huggingface.co/collections/prism-ml/bonsai) models (branch `prism`, developed as `prism-v7`). It tracks current mainline llama.cpp and adds the fork's low-bit formats and runtime features on top.
 >
