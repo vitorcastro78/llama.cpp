@@ -1,5 +1,8 @@
 # llama.cpp
 
+> [!NOTE]
+> **Fork `vitorcastro78/llama.cpp` (branch `kortex`)** = Prism tip + [PR #221 `bonsai-combo`](https://github.com/PrismML-Eng/llama.cpp/pull/221) (Ampere/Ada CUDA: #214 prefill, #215/#218 decode, #216 GDN, #220, FA q4/q8 in-place, MTP) + thecodacus MoE cache cherry-picks. Remotes: `origin`, `upstream` (ggml-org), `prism`, `thecodacus`, `ada` (#221). When Prism merges #221, re-sync from `prism/prism` and re-apply MoE picks.
+
 > [!IMPORTANT]
 > **This is the PrismML fork of llama.cpp**, the main line behind the [Bonsai](https://huggingface.co/collections/prism-ml/bonsai) models (branch `prism`, developed as `prism-v7`). It tracks current mainline llama.cpp and adds the fork's low-bit formats and runtime features on top.
 >
